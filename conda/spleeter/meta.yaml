@@ -13,8 +13,6 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: True  # [osx]
-  entry_points:
-    - spleeter = spleeter.__main__:entrypoint
 
 requirements:
   host:
@@ -29,7 +27,6 @@ requirements:
     - pandas
     - ffmpeg-python
     - norbert
-    - typer
     - httpx
 
 test:
